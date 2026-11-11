@@ -1,6 +1,6 @@
 # Manual de despliegue
 
-Esta guía describe cómo poner en marcha la línea base `v1.0.0-baseline` en un servidor Linux.
+Esta guía describe cómo poner en marcha la línea base `v1.0.0` en un servidor Linux.
 El servidor de desarrollo de Flask (`python run.py`) sirve para pruebas; para producción se usa un
 servidor WSGI.
 
@@ -10,7 +10,7 @@ servidor WSGI.
 sudo apt update && sudo apt install -y python3 python3-venv git
 git clone https://github.com/Juan-Pablo-Saavedra/REVA.git
 cd REVA
-git checkout v1.0.0-baseline          # fija el despliegue en la línea base
+git checkout v1.0.0          # fija el despliegue en la línea base
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt gunicorn
