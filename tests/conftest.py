@@ -59,3 +59,14 @@ def mesero(app):
 def cliente(app):
     _crear_usuario(app, "Clara Cliente", "cliente@sigr.test", "cliente")
     return _cliente_con_sesion(app, "cliente@sigr.test")
+
+
+@pytest.fixture
+def carta(admin):
+    """Carga una categoría con dos platos usando la API de administración."""
+    cat = admin.post("/menu/categorias", json={"nombre": "Platos fuertes"}).get_json()
+    bandeja = admin.post("/menu/platos", json={
+        "categoria_id": cat["id"], "nombre": "Bandeja paisa", "precio": 32000}).get_json()
+    sopa = admin.post("/menu/platos", json={
+        "categoria_id": cat["id"], "nombre": "Sancocho", "precio": 25000}).get_json()
+    return {"categoria": cat, "bandeja": bandeja, "sopa": sopa}
