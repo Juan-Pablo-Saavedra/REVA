@@ -70,3 +70,9 @@ def carta(admin):
     sopa = admin.post("/menu/platos", json={
         "categoria_id": cat["id"], "nombre": "Sancocho", "precio": 25000}).get_json()
     return {"categoria": cat, "bandeja": bandeja, "sopa": sopa}
+
+
+@pytest.fixture
+def mesa(admin):
+    """Una mesa de 4 puestos creada por el administrador."""
+    return admin.post("/mesas", json={"numero": 1, "capacidad": 4}).get_json()
