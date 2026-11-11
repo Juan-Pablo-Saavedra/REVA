@@ -5,7 +5,7 @@ El formato sigue la idea de "Keep a Changelog" y el versionado es semántico (MA
 
 ## [Sin publicar]
 
-## [1.0.0-baseline] - 2026-11-11
+## [1.0.0] - 2026-11-11
 
 Primera línea base del SIGR. Reúne los cinco módulos del alcance inicial y su documentación.
 

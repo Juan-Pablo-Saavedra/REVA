@@ -3,12 +3,12 @@
 Aplicación web (API REST) para gestionar la operación diaria de un restaurante:
 autenticación por roles, menú digital, pedidos, reservas, cierre de caja y reportes de ventas.
 
-Este repositorio contiene la **versión base (línea base `v1.0.0-baseline`)** desarrollada para la
+Este repositorio contiene la **versión base (línea base `v1.0.0`)** desarrollada para la
 actividad AA2 de *Gestión del Software* (Unidad 2, Gestión de la configuración).
 
 - **Repositorio:** https://github.com/Juan-Pablo-Saavedra/REVA
 - **Rama estable:** `main`
-- **Línea base:** etiqueta `v1.0.0-baseline`
+- **Línea base:** versión `1.0.0`, marcada con la etiqueta anotada `v1.0.0`
 - **Licencia:** MIT (ver `LICENSE.txt`)
 
 ## Módulos incluidos en la línea base

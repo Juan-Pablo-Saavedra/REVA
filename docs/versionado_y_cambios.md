@@ -8,7 +8,9 @@ Se usa versionado semántico `MAJOR.MINOR.PATCH`:
 - **MINOR**: funcionalidades nuevas compatibles.
 - **PATCH**: correcciones de errores.
 
-La línea base se marca con la etiqueta anotada `v1.0.0-baseline` sobre la rama `main`.
+La línea base es la versión `1.0.0` y se marca con la etiqueta anotada `v1.0.0` sobre la rama `main`.
+No se usa un sufijo como `-baseline` en el nombre de la etiqueta porque, según el versionado semántico,
+un sufijo con guion indica una versión de prelanzamiento (de menor precedencia que `1.0.0`).
 
 ## Ramas
 
@@ -43,5 +45,5 @@ Todo cambio sobre la línea base sigue este camino:
 4. Se revisa mediante *pull request* y se fusiona en `main` si las pruebas pasan.
 5. Se actualiza `CHANGELOG.md` y, cuando corresponda, se crea una nueva etiqueta de versión.
 
-La etiqueta `v1.0.0-baseline` no se mueve ni se reescribe: una línea base ya aprobada solo cambia
+La etiqueta `v1.0.0` no se mueve ni se reescribe: una línea base ya aprobada solo cambia
 creando una versión posterior.
