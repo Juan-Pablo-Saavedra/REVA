@@ -25,12 +25,13 @@ def create_app(config=None):
 
     app.teardown_appcontext(base_datos.cerrar_db)
 
-    from . import auth, menu, mesas, pedidos, reservas
+    from . import auth, caja, menu, mesas, pedidos, reservas
     app.register_blueprint(auth.bp)
     app.register_blueprint(menu.bp)
     app.register_blueprint(mesas.bp)
     app.register_blueprint(pedidos.bp)
     app.register_blueprint(reservas.bp)
+    app.register_blueprint(caja.bp)
 
     @app.get("/salud")
     def salud():
